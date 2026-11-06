@@ -23,17 +23,17 @@ const PROJECTS = [
     cover: IMG('photo-1558655146-9f40138edfeb'), palette: 'Laranja queimado · Creme · Grafite',
     context: 'Marca nova no segmento de cafés especiais que precisava traduzir origem e artesanato em um sistema visual enxuto e memorável.',
     challenge: 'Fugir do clichê “café aconchegante” e construir uma identidade que funcionasse do copo descartável à fachada, sem perder legibilidade.',
-    concept: 'Tipografia expressiva + grid editorial inspirado em rótulos de café, com o verde-limão reservado apenas para detalhes de informação — criando o mesmo contraste que o site usa.',
+    concept: 'Tipografia expressiva + grid editorial inspirado em rótulos de café, com o vermelho reservado apenas para detalhes de informação — criando o mesmo contraste que o site usa.',
     results: 'Sistema aprovado para 3 pontos de venda, aumento percebido de valor da marca e redução de custos de produção com padronização.',
     gallery: [IMG('photo-1561070791-2526d30994b5'), IMG('photo-1559028012-481c04fa702d'), IMG('photo-1586717791821-3f44a563fa4c')]
   },
   {
     code: 'PROJECT_002', title: 'Vibe Fitness — Social Media', cat: 'Social media', catKey: 'social', year: '2025',
     desc: 'Linha editorial de 30 dias para lançamento de estúdio boutique: posts, stories e capas de reels.',
-    cover: IMG('photo-1611162617213-7d7a39e9b1d7'), palette: 'Preto · Lime · Branco gelo',
+    cover: IMG('photo-1611162617213-7d7a39e9b1d7'), palette: 'Preto · Vermelho · Branco gelo',
     context: 'Estúdio que inaugurava e precisava lotar a agenda de experimentação em 45 dias, com público jovem e urbano.',
     challenge: 'Produzir volume alto com consistência visual e mensagens curtas que funcionam sem som e em 2 segundos de atenção.',
-    concept: 'Templates modulares com tipografia gigante, foto em P&B e o lime como marcador de ação — cada peça é um “frame” recortável.',
+    concept: 'Templates modulares com tipografia gigante, foto em P&B e o vermelho como marcador de ação — cada peça é um “frame” recortável.',
     results: 'Taxa de salvamento acima da média do setor e lista de espera esgotada na primeira semana.',
     gallery: [IMG('photo-1517836357463-d25dfeac3438'), IMG('photo-1571019613454-1cb2f99b2d8b'), IMG('photo-1541534741688-6078c6bfb5c5')]
   },
@@ -70,7 +70,7 @@ const PROJECTS = [
   {
     code: 'PROJECT_006', title: 'MÁQUINA — Cartaz Experimental', cat: 'Experimental', catKey: 'experimental', year: '2025',
     desc: 'Série de cartazes gerativos em 3D sobre a estética de interfaces e seleção digital.',
-    cover: IMG('photo-1618005182384-a83a8bd57fbe'), palette: 'Cromo · Lime · Preto',
+    cover: IMG('photo-1618005182384-a83a8bd57fbe'), palette: 'Cromo · Vermelho · Preto',
     context: 'Projeto autoral para estudar como gestos de software (selecionar, alinhar, enquadrar) podem virar linguagem gráfica.',
     challenge: 'Dois dias de renderização por peça sem perder o conceito — cada variação precisava parecer parte de um mesmo sistema.',
     concept: 'Objetos 3D enquadrados por handles de seleção e coordenadas — exatamente o vocabulário visual deste site.',
@@ -185,7 +185,7 @@ const countObs = new IntersectionObserver(entries => {
 }, { threshold: 0.6 });
 $$('[data-count]').forEach(el => countObs.observe(el));
 
-/* ---------- processo: progresso lime ---------- */
+/* ---------- processo: progresso vermelho ---------- */
 const prog = $('#process-progress'), steps = $$('.process-step');
 const progObs = new IntersectionObserver(entries => {
   entries.forEach(e => {

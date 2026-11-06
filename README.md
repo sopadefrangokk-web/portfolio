@@ -1,6 +1,6 @@
 # Creative Portfolio — Site de portfólio
 
-Portfólio digital em estilo **Dark Editorial / Lime Accent** ("Design em estado digital"):
+Portfólio digital em estilo **Dark Editorial / Red Accent** ("Design em estado digital"):
 interface criativa com modo de inspeção, cursor contextual, project IDs e
 estudo de caso por projeto. Sem dependências — HTML + CSS + JS puros.
 
@@ -33,7 +33,7 @@ python -m http.server 8000
 - Modal de estudo de caso (capa, contexto, desafio, conceito, resultados,
   galeria, projeto anterior/próximo, setas do teclado).
 - Sobre com foto P&B, especialidades, ferramentas, experiência e contadores.
-- Serviços numerados, processo com progresso lime ao rolar.
+- Serviços numerados, processo com progresso vermelho ao rolar.
 - Contato com WhatsApp, links diretos e formulário validado (honeypot +
   tempo mínimo anti-spam) com tela de confirmação.
 - **INSPECT MODE:** botão no canto inferior ativa grade, linhas-guia,
