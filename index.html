@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio — Design que transforma ideias em experiências visuais</title>
+  <meta name="description" content="Creative Portfolio — Estúdio digital de design gráfico e comunicação visual. Identidade visual, social media, design publicitário e direção de arte.">
+  <meta name="theme-color" content="#0B0B0B">
+  <link rel="canonical" href="https://creativeportfolio.com.br/">
+  <!-- Social / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Creative Portfolio — Design que transforma ideias em experiências visuais">
+  <meta property="og:description" content="Identidade visual, social media, design publicitário e direção de arte. Um portfólio em estado digital.">
+  <meta property="og:url" content="https://creativeportfolio.com.br/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Creative Portfolio">
+  <meta name="twitter:description" content="Design que transforma ideias em experiências visuais.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230B0B0B'/><rect x='22' y='22' width='56' height='56' fill='%23B7DA16'/></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#projetos">Ir para os projetos</a>
+
+  <!-- Cursor contextual (desktop) -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-tag" aria-hidden="true">VIEW PROJECT</div>
+
+  <!-- Inspetor criativo -->
+  <div id="inspect-layer" aria-hidden="true">
+    <div class="inspect-grid"></div>
+    <div class="inspect-line-v"></div>
+    <div class="inspect-line-h"></div>
+    <div class="inspect-readout">X: 0000&nbsp;&nbsp;Y: 0000</div>
+  </div>
+  <button id="inspect-toggle" type="button" aria-pressed="false" title="Ativa a camada de inspeção criativa">INSPECT MODE</button>
+
+  <!-- ============ HEADER ============ -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo" aria-label="Creative Portfolio — início">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">CREATIVE<em>PORTFOLIO</em></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#inicio" data-section="inicio">Início</a></li>
+          <li><a class="nav-link" href="#projetos" data-section="projetos">Projetos</a></li>
+          <li><a class="nav-link" href="#sobre" data-section="sobre">Sobre</a></li>
+          <li><a class="nav-link" href="#contato" data-section="contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <span class="availability" role="status"><span class="avail-dot" aria-hidden="true"></span>Disponível para projetos</span>
+        <a class="btn btn-lime btn-sm" href="#contato">Falar comigo</a>
+        <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-menu" aria-label="Menu móvel">
+      <a href="#inicio">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="hero" data-inspect="HERO">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-kicker reveal">DESIGN GRÁFICO / COMUNICAÇÃO VISUAL — <span data-year-range></span></p>
+        <h1 class="hero-title" aria-label="Design que transforma ideias em experiências visuais.">
+          <span class="word">Design</span>
+          <span class="word">que</span>
+          <span class="word outline">transforma</span>
+          <span class="word">ideias</span>
+          <span class="word">em</span>
+          <span class="word accent">experiências</span>
+          <span class="word">visuais<i aria-hidden="true">.</i></span>
+        </h1>
+        <div class="hero-sub reveal">
+          <p class="hero-name">Creative Portfolio <span class="hero-role">— Designer gráfico &amp; diretor de arte</span></p>
+          <p class="hero-desc">Identidades visuais, campanhas e sistemas de comunicação que traduzem personalidade de marca em imagens que ficam na memória. Estúdio digital em operação contínua.</p>
+        </div>
+        <div class="hero-cta reveal">
+          <a class="btn btn-lime" href="#projetos">Explorar projetos <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#sobre">Conhecer o estúdio</a>
+        </div>
+        <div class="hero-meta reveal" aria-label="Informações rápidas">
+          <span><b>LOC</b> Brasil — atendimento remoto</span>
+          <span><b>STATUS</b> Aceitando novos projetos</span>
+          <span><b>GRID</b> Dark Editorial / Lime</span>
+        </div>
+      </div>
+      <p class="hero-scroll" aria-hidden="true">ROLE PARA EXPLORAR ↓</p>
+    </section>
+
+    <!-- ============ SELECTED WORKS ============ -->
+    <section id="projetos" class="works" data-inspect="SELECTED_WORKS">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag">SELECTED WORKS <span>— 2023/2026</span></p>
+          <h2 class="section-title">Trabalhos <em>em destaque</em></h2>
+          <p class="section-lead">Cada projeto é um arquivo criativo indexado. Passe o cursor, use os filtros e abra o estudo de caso completo.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtrar projetos por categoria">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter-btn" type="button" data-filter="identidade" aria-pressed="false">Identidade visual</button>
+          <button class="filter-btn" type="button" data-filter="social" aria-pressed="false">Social media</button>
+          <button class="filter-btn" type="button" data-filter="publicidade" aria-pressed="false">Publicitário</button>
+          <button class="filter-btn" type="button" data-filter="direcao" aria-pressed="false">Direção de arte</button>
+          <button class="filter-btn" type="button" data-filter="experimental" aria-pressed="false">Experimental</button>
+        </div>
+
+        <div id="works-grid" class="works-grid"><!-- renderizado via JS --></div>
+        <p id="works-empty" class="works-empty" hidden>Nenhum projeto nesta categoria ainda.</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="sobre" class="about" data-inspect="ABOUT">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag">ABOUT <span>— IDENTIDADE</span></p>
+          <h2 class="section-title">Por trás da <em>interface</em></h2>
+        </header>
+        <div class="about-grid">
+          <figure class="about-photo reveal">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Retrato editorial em preto e branco do designer" loading="lazy">
+            <figcaption class="photo-tag">FIG.01 — RETRATO NEUTRO</figcaption>
+            <span class="sel-handle tl" aria-hidden="true"></span><span class="sel-handle tr" aria-hidden="true"></span>
+            <span class="sel-handle bl" aria-hidden="true"></span><span class="sel-handle br" aria-hidden="true"></span>
+          </figure>
+          <div class="about-body reveal">
+            <p class="about-lead">Design não é decoração. É decisão. Cada traço, cada cor e cada espaço em branco existe por um motivo — e eu trabalho para que cada motivo seja visível.</p>
+            <p>Sou designer gráfico e diretor de arte atuando em identidade visual, comunicação digital e campanhas. Meu processo mistura rigor de grid, pesquisa de referências e experimentação — a mesma lógica de uma interface de software aplicada à comunicação de marcas: precisa ser precisa, rápida e memorável.</p>
+            <div class="about-cols">
+              <div class="about-block">
+                <h3>ESPECIALIDADES</h3>
+                <ul><li>Identidade visual</li><li>Social media</li><li>Design publicitário</li><li>Direção de arte</li></ul>
+              </div>
+              <div class="about-block">
+                <h3>FERRAMENTAS</h3>
+                <ul><li>Photoshop / Illustrator</li><li>Figma</li><li>After Motion / 3D</li><li>Tipografia &amp; grid</li></ul>
+              </div>
+              <div class="about-block">
+                <h3>EXPERIÊNCIA</h3>
+                <ul><li>60+ projetos entregues</li><li>Marcas em 4 segmentos</li><li>Campanhas 360º</li><li>Freelance &amp; agência</li></ul>
+              </div>
+            </div>
+            <div class="about-stats">
+              <div class="stat"><strong data-count="60">0</strong><span>Projetos+</span></div>
+              <div class="stat"><strong data-count="4">0</strong><span>Anos de prática</span></div>
+              <div class="stat"><strong data-count="12">0</strong><span>Marcas atendidas</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="servicos" class="services" data-inspect="SERVICES">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag">SERVICES <span>— O QUE EU FAÇO</span></p>
+          <h2 class="section-title">Especialidades</h2>
+        </header>
+        <ol class="services-list">
+          <li class="service-card reveal"><span class="svc-num">01</span><div><h3>Identidade visual</h3><p>Construção de sistemas visuais que representam a personalidade e o posicionamento de marcas.</p></div><span class="svc-arrow" aria-hidden="true">↗</span></li>
+          <li class="service-card reveal"><span class="svc-num">02</span><div><h3>Social media</h3><p>Criação de peças gráficas estratégicas para comunicação digital que para o scroll.</p></div><span class="svc-arrow" aria-hidden="true">↗</span></li>
+          <li class="service-card reveal"><span class="svc-num">03</span><div><h3>Design publicitário</h3><p>Desenvolvimento de materiais promocionais e campanhas visuais com leitura imediata.</p></div><span class="svc-arrow" aria-hidden="true">↗</span></li>
+          <li class="service-card reveal"><span class="svc-num">04</span><div><h3>Direção de arte</h3><p>Construção de conceitos e linguagens visuais para projetos criativos consistentes.</p></div><span class="svc-arrow" aria-hidden="true">↗</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section id="processo" class="process" data-inspect="CREATIVE_PROCESS">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag">CREATIVE PROCESS <span>— DO BRIEF AO PIXEL</span></p>
+          <h2 class="section-title">Como o projeto <em>ganha forma</em></h2>
+        </header>
+        <div class="process-track">
+          <div class="process-progress" id="process-progress" aria-hidden="true"></div>
+          <ol class="process-steps">
+            <li class="process-step reveal"><span class="step-dot" aria-hidden="true"></span><span class="step-num">01</span><h3>Discovery</h3><p>Entendimento do projeto, público e das necessidades reais por trás do briefing.</p></li>
+            <li class="process-step reveal"><span class="step-dot" aria-hidden="true"></span><span class="step-num">02</span><h3>Strategy</h3><p>Planejamento, referências e definição clara do conceito a ser explorado.</p></li>
+            <li class="process-step reveal"><span class="step-dot" aria-hidden="true"></span><span class="step-num">03</span><h3>Creation</h3><p>Desenvolvimento da solução visual: esboços, tipografia, cor e composição.</p></li>
+            <li class="process-step reveal"><span class="step-dot" aria-hidden="true"></span><span class="step-num">04</span><h3>Delivery</h3><p>Finalização, revisão de detalhes e entrega organizada para uso imediato.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contato" class="contact" data-inspect="CONTACT">
+      <div class="container">
+        <p class="section-tag reveal">CONTACT <span>— NOVO PROJETO</span></p>
+        <h2 class="contact-title reveal">Tem uma ideia?<br>Vamos transformar em <em>algo extraordinário.</em></h2>
+        <div class="contact-grid">
+          <div class="contact-side reveal">
+            <p class="contact-lead">Conte o que você precisa. Respondo em até 1 dia útil com próximos passos, prazos e investimento estimado.</p>
+            <div class="contact-links">
+              <a class="btn btn-lime btn-wa" id="wa-button" href="#" target="_blank" rel="noopener">Chamar no WhatsApp <span aria-hidden="true">→</span></a>
+              <ul class="direct-links">
+                <li><span>E-MAIL</span><a id="contact-email" href="#">ola@creativeportfolio.com.br</a></li>
+                <li><span>INSTAGRAM</span><a id="contact-ig" href="#" target="_blank" rel="noopener">@creativeportfolio</a></li>
+                <li><span>BEHANCE</span><a id="contact-be" href="#" target="_blank" rel="noopener">/creativeportfolio</a></li>
+              </ul>
+              <p class="avail-line"><span class="avail-dot" aria-hidden="true"></span> Agenda aberta para novos projetos neste trimestre.</p>
+            </div>
+          </div>
+          <div class="contact-form-wrap reveal">
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="f-nome">Nome</label>
+                  <input id="f-nome" name="nome" type="text" placeholder="Como posso te chamar?" autocomplete="name" required>
+                  <p class="field-error" data-for="nome" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="f-email">E-mail</label>
+                  <input id="f-email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required>
+                  <p class="field-error" data-for="email" aria-live="polite"></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-tipo">Tipo de projeto</label>
+                <select id="f-tipo" name="tipo" required>
+                  <option value="">Selecione…</option>
+                  <option>Identidade visual</option>
+                  <option>Social media</option>
+                  <option>Design publicitário</option>
+                  <option>Direção de arte</option>
+                  <option>Outro / experimental</option>
+                </select>
+                <p class="field-error" data-for="tipo" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-msg">Mensagem</label>
+                <textarea id="f-msg" name="mensagem" rows="5" placeholder="Me conte sobre seu projeto, prazo e referências…" required></textarea>
+                <p class="field-error" data-for="mensagem" aria-live="polite"></p>
+              </div>
+              <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <button class="btn btn-lime btn-block" type="submit">Enviar mensagem <span aria-hidden="true">→</span></button>
+              <p class="form-note">Seus dados são usados apenas para responder ao contato. Sem spam.</p>
+            </form>
+            <div id="form-success" class="form-success" hidden role="status">
+              <span class="success-mark" aria-hidden="true">✓</span>
+              <h3>Mensagem recebida.</h3>
+              <p>Obrigado pelo contato — retorno em até 1 dia útil. Quer acelerar? Me chame no WhatsApp.</p>
+              <a class="btn btn-ghost" id="wa-fallback" href="#" target="_blank" rel="noopener">Abrir WhatsApp →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="footer-brand">CREATIVE<span>PORTFOLIO</span></a>
+      <nav aria-label="Links do rodapé">
+        <a href="#inicio">Início</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+      </nav>
+      <div class="footer-social">
+        <a id="foot-ig" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a id="foot-be" href="#" target="_blank" rel="noopener">Behance</a>
+        <a id="foot-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="footer-copy">© <span data-year></span> Creative Portfolio — Todos os direitos reservados.</p>
+      <p class="footer-status"><span class="avail-dot" aria-hidden="true"></span> SITE ONLINE — <span data-clock>00:00</span></p>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT MODAL (estudo de caso) ============ -->
+  <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <div class="modal-head">
+        <span id="modal-code" class="modal-code">PROJECT_001</span>
+        <span id="modal-cat" class="modal-cat"></span>
+        <button id="modal-close" type="button" aria-label="Fechar estudo de caso">✕</button>
+      </div>
+      <div class="modal-body">
+        <figure class="modal-cover"><img id="modal-cover" src="" alt=""><figcaption id="modal-cap" class="photo-tag"></figcaption></figure>
+        <h2 id="modal-title" class="modal-title"></h2>
+        <p id="modal-desc" class="modal-desc"></p>
+        <div class="modal-meta">
+          <div><span>CATEGORIA</span><strong id="m-cat"></strong></div>
+          <div><span>ANO</span><strong id="m-year"></strong></div>
+          <div><span>PALETA</span><strong id="m-pal"></strong></div>
+        </div>
+        <section><h3>01 — Contexto e objetivo</h3><p id="m-context"></p></section>
+        <section><h3>02 — Desafio criativo</h3><p id="m-challenge"></p></section>
+        <section><h3>03 — Conceito desenvolvido</h3><p id="m-concept"></p></section>
+        <section><h3>04 — Aplicações e resultados</h3><p id="m-results"></p></section>
+        <section><h3>05 — Galeria</h3><div id="m-gallery" class="modal-gallery"></div></section>
+        <nav class="modal-next">
+          <button type="button" id="m-prev">← Projeto anterior</button>
+          <button type="button" id="m-next">Próximo projeto →</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
