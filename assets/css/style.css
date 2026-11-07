@@ -134,7 +134,7 @@ button{font-family:inherit;cursor:pointer}
 .work-info{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-top:1.1rem}
 .work-info h3{font-family:var(--font-title);font-size:clamp(1.15rem,2vw,1.5rem);text-transform:uppercase}
 .work-meta{font-family:var(--font-tech);font-size:11px;letter-spacing:.14em;color:var(--silver);text-transform:uppercase;white-space:nowrap}
-.work-info p{grid-column:1/-1;color:var(--silver);font-size:.95rem;max-width:52ch}
+.work-info p{grid-column:1/-1;color:var(--silver);font-size:.95rem;max-width:52ch;white-space:pre-line}
 .work-card .work-info{flex-wrap:wrap}
 .works-empty{color:var(--silver);font-family:var(--font-tech);padding:2rem 0}
 
@@ -237,7 +237,7 @@ button{font-family:inherit;cursor:pointer}
 .modal-cover img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .modal-cover .photo-tag{position:static;display:block;font-size:10px;padding:.6rem .9rem;border-top:1px solid var(--line)}
 .modal-title{font-family:var(--font-title);font-size:clamp(1.8rem,4vw,3rem);text-transform:uppercase;margin-bottom:.8rem}
-.modal-desc{font-size:1.1rem;color:var(--silver);max-width:60ch}
+.modal-desc{font-size:1.1rem;color:var(--silver);max-width:60ch;white-space:pre-line}
 .modal-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:2rem 0;border-top:1px dashed var(--line-strong);border-bottom:1px dashed var(--line-strong);padding:1.2rem 0}
 .modal-meta span{display:block;font-family:var(--font-tech);font-size:9px;letter-spacing:.24em;color:var(--accent);margin-bottom:.3rem}
 .modal-meta strong{font-family:var(--font-tech);font-size:.9rem}
