@@ -21,12 +21,12 @@ const PROJECTS = [
   {
     code: 'PROJECT_001', title: 'Artesano Hamburgueria', cat: 'Social media', catKey: 'social', year: '2025',
     desc: 'PTBR 🇧🇷:\nCliente: ARTESANO HAMBURGUERIA\nDireção de arte/Design: Matheus Henrique\n\nProjeto de criação de Social Media para atrair novos clientes para a hamburgueria, reforçar a sua visibilidade no mercado nicho e se posicionar melhor frente a concorrentes.\n\nDesafio: Criar mídias de interação e que possa passar desejo de comer na Artesano. Causando o efeito de atrair clientes famintos no interior de Goiás.\n\nENG 🇺🇸:\nClient: ARTESANO HAMBURGUERIA\nArt Direction/Design: Matheus Henrique\n\nSocial media creation project to attract new customers to the burger restaurant, strengthen its visibility in the niche market, and position it better against competitors.\n\nChallenge: To create interactive content that sparks the craving to eat at Artesano drawing in hungry customers across the interior of Goiás.',
-    cover: 'assets/img/artesano-hamburgueria.jpg', palette: 'Laranja queimado · Creme · Grafite',
+    cover: 'assets/img/arte-11.png', palette: 'Laranja queimado · Creme · Grafite',
     context: 'Hamburgueria artesanal que precisava comunicar o processo manual (blend moído de manhã, chapa calibrada) e transformar o burger em protagonista do feed.',
     challenge: 'Aumentar apetite e pedidos sem parecer genérico: o produto tinha que dominar a peça, com texto curto e leitura imediata no scroll.',
     concept: 'Fotografia de produto em primeiro plano sobre fundos laranja/creme/grafite, tipografia oversized ("existe fome… e existe fome de Artesano") e selos de ação ("prove a diferença, peça o seu").',
     results: 'Linha editorial consistente para feed e stories, com peças reaproveitáveis por lote (ex.: Lote nº 07) e CTA direto para pedido.',
-    gallery: ['assets/img/artesano-hamburgueria.jpg', 'assets/img/arte-01.jpg', 'assets/img/arte-02.jpg', 'assets/img/arte-03.jpg', 'assets/img/arte-04.jpg', 'assets/img/arte-05.jpg', 'assets/img/arte-06.jpg', 'assets/img/arte-07.jpg', 'assets/img/arte-08.jpg', 'assets/img/arte-09.jpg', 'assets/img/arte-10.jpg', 'assets/img/arte-11.jpg', 'assets/img/arte-12.jpg']
+    gallery: ['assets/img/arte-11.png', 'assets/img/arte-01.png', 'assets/img/arte-02.png', 'assets/img/arte-03.png', 'assets/img/arte-04.png', 'assets/img/arte-05.png', 'assets/img/arte-06.png', 'assets/img/arte-07.png', 'assets/img/arte-08.png', 'assets/img/arte-09.png', 'assets/img/arte-10.png', 'assets/img/arte-12.png']
   }
 ];
 
