@@ -15,69 +15,11 @@ const CONFIG = {
 };
 
 /* ---------- DADOS: projetos (edite livremente) ---------- */
+/* Nenhum projeto cadastrado ainda. Para adicionar, insira objetos neste array
+   com: code, title, cat, catKey, year, desc, cover, palette,
+   context, challenge, concept, results, gallery. */
 const IMG = (id, w) => 'https://images.unsplash.com/' + id + '?q=80&w=' + (w || 1400) + '&auto=format&fit=crop';
-const PROJECTS = [
-  {
-    code: 'PROJECT_001', title: 'Nordeste Café — Identidade', cat: 'Identidade visual', catKey: 'identidade', year: '2025',
-    desc: 'Sistema visual completo para cafeteria artesanal: logotipo, embalagens, menu e sinalização.',
-    cover: IMG('photo-1558655146-9f40138edfeb'), palette: 'Laranja queimado · Creme · Grafite',
-    context: 'Marca nova no segmento de cafés especiais que precisava traduzir origem e artesanato em um sistema visual enxuto e memorável.',
-    challenge: 'Fugir do clichê “café aconchegante” e construir uma identidade que funcionasse do copo descartável à fachada, sem perder legibilidade.',
-    concept: 'Tipografia expressiva + grid editorial inspirado em rótulos de café, com o vermelho reservado apenas para detalhes de informação — criando o mesmo contraste que o site usa.',
-    results: 'Sistema aprovado para 3 pontos de venda, aumento percebido de valor da marca e redução de custos de produção com padronização.',
-    gallery: [IMG('photo-1561070791-2526d30994b5'), IMG('photo-1559028012-481c04fa702d'), IMG('photo-1586717791821-3f44a563fa4c')]
-  },
-  {
-    code: 'PROJECT_002', title: 'Vibe Fitness — Social Media', cat: 'Social media', catKey: 'social', year: '2025',
-    desc: 'Linha editorial de 30 dias para lançamento de estúdio boutique: posts, stories e capas de reels.',
-    cover: IMG('photo-1611162617213-7d7a39e9b1d7'), palette: 'Preto · Vermelho · Branco gelo',
-    context: 'Estúdio que inaugurava e precisava lotar a agenda de experimentação em 45 dias, com público jovem e urbano.',
-    challenge: 'Produzir volume alto com consistência visual e mensagens curtas que funcionam sem som e em 2 segundos de atenção.',
-    concept: 'Templates modulares com tipografia gigante, foto em P&B e o vermelho como marcador de ação — cada peça é um “frame” recortável.',
-    results: 'Taxa de salvamento acima da média do setor e lista de espera esgotada na primeira semana.',
-    gallery: [IMG('photo-1517836357463-d25dfeac3438'), IMG('photo-1571019613454-1cb2f99b2d8b'), IMG('photo-1541534741688-6078c6bfb5c5')]
-  },
-  {
-    code: 'PROJECT_003', title: 'Festival Horizonte — Campanha', cat: 'Design publicitário', catKey: 'publicidade', year: '2024',
-    desc: 'Campanha 360º para festival de música: key visual, OOH, line-up e material promocional.',
-    cover: IMG('photo-1541961017774-22349e4a1262'), palette: 'Índigo · Coral · Amarelo',
-    context: 'Primeira edição de festival regional que precisava competir visualmente com eventos nacionais.',
-    challenge: 'Garantir leitura à distância (outdoor) e reconhecimento imediato em feed, mantendo o sistema flexível para dezenas de atrações.',
-    concept: 'Key visual geométrica com círculos concêntricos que viram “placas” para cada atração — um sistema, infinitas variações.',
-    results: 'Vendas de primeiro lote esgotadas em 72h e cobertura de imprensa citando a identidade da campanha.',
-    gallery: [IMG('photo-1470229722913-7c0e2dbbafd3'), IMG('photo-1501281668745-f7f57925c3b4'), IMG('photo-1492684223066-81342ee5ff30')]
-  },
-  {
-    code: 'PROJECT_004', title: 'Revista Traço — Direção de Arte', cat: 'Direção de arte', catKey: 'direcao', year: '2024',
-    desc: 'Direção de arte e projeto gráfico da edição 12 da revista Traço: capa, miolo e ensaios fotográficos.',
-    cover: IMG('photo-1554080353-a576cf803bda'), palette: 'P&B editorial · Cinza prata',
-    context: 'Revista independente de cultura que passava por reformulação visual sem perder o público fiel.',
-    challenge: 'Equilibrar ousadia editorial com custo de impressão reduzido e rotina de produção enxuta.',
-    concept: 'Fotografia de estúdio em P&B, tipografia oversized e linhas-guia vazadas como elemento gráfico recorrente — a “interface” aplicada ao papel.',
-    results: 'Edição esgotada, convite para exposição do projeto gráfico e destaque em premiação de design editorial.',
-    gallery: [IMG('photo-1504711434969-e33886168f5c'), IMG('photo-1524578271613-d550eacf6090'), IMG('photo-1544716278-ca5e3f4abd8c')]
-  },
-  {
-    code: 'PROJECT_005', title: 'Aurora Cosméticos — Embalagens', cat: 'Identidade visual', catKey: 'identidade', year: '2023',
-    desc: 'Linha de embalagens para marca de cosméticos clean: rótulos, frascos, caixas e guia de uso.',
-    cover: IMG('photo-1556228720-195a672e8a03'), palette: 'Verde sálvia · Areia · Tinta',
-    context: 'Marca digital que ia para o varejo e precisava de embalagem que se sustentasse na prateleira sem o apoio do e-commerce.',
-    challenge: 'Criar hierarquia de informação cristalina com restrições regulatórias e ainda manter apelo premium.',
-    concept: 'Sistema tipográfico com numeração de linha (01/02/03) e faixas de cor — o consumidor localiza o produto por forma, cor e número.',
-    results: 'Aprovado em cadeia de farmácias em 2 estados e redução de 30% em retrabalho de design com o guia.',
-    gallery: [IMG('photo-1596462502278-27bfdc403348'), IMG('photo-1571781926291-c477ebfd024b'), IMG('photo-1608248543803-ba4f8c70ae0b')]
-  },
-  {
-    code: 'PROJECT_006', title: 'MÁQUINA — Cartaz Experimental', cat: 'Experimental', catKey: 'experimental', year: '2025',
-    desc: 'Série de cartazes gerativos em 3D sobre a estética de interfaces e seleção digital.',
-    cover: IMG('photo-1618005182384-a83a8bd57fbe'), palette: 'Cromo · Vermelho · Preto',
-    context: 'Projeto autoral para estudar como gestos de software (selecionar, alinhar, enquadrar) podem virar linguagem gráfica.',
-    challenge: 'Dois dias de renderização por peça sem perder o conceito — cada variação precisava parecer parte de um mesmo sistema.',
-    concept: 'Objetos 3D enquadrados por handles de seleção e coordenadas — exatamente o vocabulário visual deste site.',
-    results: 'Selecionado para mostra coletiva e base para futuras direções de arte em projetos digitais.',
-    gallery: [IMG('photo-1634017839464-5c339ebe3cb4'), IMG('photo-1620641788421-7a1c342ea42e'), IMG('photo-1614850715649-1d0106293bd1')]
-  }
-];
+const PROJECTS = [];
 
 /* ---------- helpers ---------- */
 const $ = (s, c) => (c || document).querySelector(s);
@@ -153,6 +95,11 @@ renderWorks();
 
 /* ---------- filtros ---------- */
 const emptyMsg = $('#works-empty');
+if (PROJECTS.length === 0) {
+  const filtersEl = $('.filters'); if (filtersEl) filtersEl.hidden = true;
+  emptyMsg.textContent = 'Nenhum projeto publicado ainda — adicione em PROJECTS (assets/js/app.js).';
+  emptyMsg.hidden = false;
+}
 $$('.filter-btn').forEach(btn => btn.addEventListener('click', () => {
   $$('.filter-btn').forEach(b => { b.classList.toggle('active', b === btn); b.setAttribute('aria-pressed', b === btn); });
   let visible = 0;
