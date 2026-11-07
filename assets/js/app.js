@@ -20,7 +20,8 @@ const IMG = (id, w) => 'https://images.unsplash.com/' + id + '?q=80&w=' + (w || 
 const PROJECTS = [
   {
     code: 'PROJECT_001', title: 'Artesano Hamburgueria', cat: 'Social media', catKey: 'social', year: '2025',
-    desc: 'PTBR 🇧🇷:\nCliente: ARTESANO HAMBURGUERIA\nDireção de arte/Design: Matheus Henrique\n\nProjeto de criação de Social Media para atrair novos clientes para a hamburgueria, reforçar a sua visibilidade no mercado nicho e se posicionar melhor frente a concorrentes.\n\nDesafio: Criar mídias de interação e que possa passar desejo de comer na Artesano. Causando o efeito de atrair clientes famintos no interior de Goiás.\n\nENG 🇺🇸:\nClient: ARTESANO HAMBURGUERIA\nArt Direction/Design: Matheus Henrique\n\nSocial media creation project to attract new customers to the burger restaurant, strengthen its visibility in the niche market, and position it better against competitors.\n\nChallenge: To create interactive content that sparks the craving to eat at Artesano drawing in hungry customers across the interior of Goiás.',
+    desc: 'Projeto de Social Media para atrair novos clientes, reforçar a visibilidade no mercado e posicionar a marca frente aos concorrentes.',
+    bio: 'PTBR 🇧🇷:\nCliente: ARTESANO HAMBURGUERIA\nDireção de arte/Design: Matheus Henrique\n\nProjeto de criação de Social Media para atrair novos clientes para a hamburgueria, reforçar a sua visibilidade no mercado nicho e se posicionar melhor frente a concorrentes.\n\nDesafio: Criar mídias de interação e que possa passar desejo de comer na Artesano. Causando o efeito de atrair clientes famintos no interior de Goiás.\n\nENG 🇺🇸:\nClient: ARTESANO HAMBURGUERIA\nArt Direction/Design: Matheus Henrique\n\nSocial media creation project to attract new customers to the burger restaurant, strengthen its visibility in the niche market, and position it better against competitors.\n\nChallenge: To create interactive content that sparks the craving to eat at Artesano drawing in hungry customers across the interior of Goiás.',
     cover: 'assets/img/capa.png', palette: 'Laranja queimado · Creme · Grafite',
     context: 'Hamburgueria artesanal que precisava comunicar o processo manual (blend moído de manhã, chapa calibrada) e transformar o burger em protagonista do feed.',
     challenge: 'Aumentar apetite e pedidos sem parecer genérico: o produto tinha que dominar a peça, com texto curto e leitura imediata no scroll.',
@@ -210,6 +211,7 @@ function openProject(i) {
   $('#modal-cap').textContent = 'FIG.01 — CAPA / ' + p.code;
   $('#modal-title').textContent = p.title;
   $('#modal-desc').textContent = p.desc;
+  $('#m-bio').textContent = p.bio || '';
   $('#m-cat').textContent = p.cat;
   $('#m-year').textContent = p.year;
   $('#m-pal').textContent = p.palette;

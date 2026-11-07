@@ -241,6 +241,9 @@ button{font-family:inherit;cursor:pointer}
 .modal-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:2rem 0;border-top:1px dashed var(--line-strong);border-bottom:1px dashed var(--line-strong);padding:1.2rem 0}
 .modal-meta span{display:block;font-family:var(--font-tech);font-size:9px;letter-spacing:.24em;color:var(--accent);margin-bottom:.3rem}
 .modal-meta strong{font-family:var(--font-tech);font-size:.9rem}
+.modal-bio{border-left:3px solid var(--accent);background:var(--surface);border-radius:0 10px 10px 0;padding:1.3rem 1.5rem}
+.modal-bio h3{color:var(--accent)!important;letter-spacing:.24em}
+.modal-bio p{white-space:pre-line;color:var(--silver);font-size:.97rem;line-height:1.75}
 .modal-body section{margin:2.4rem 0}
 .modal-body section h3{font-family:var(--font-tech);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem}
 .modal-body section p{color:var(--silver);max-width:70ch}
