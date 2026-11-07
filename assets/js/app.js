@@ -15,11 +15,20 @@ const CONFIG = {
 };
 
 /* ---------- DADOS: projetos (edite livremente) ---------- */
-/* Nenhum projeto cadastrado ainda. Para adicionar, insira objetos neste array
-   com: code, title, cat, catKey, year, desc, cover, palette,
-   context, challenge, concept, results, gallery. */
+/* Para adicionar um projeto: copie um bloco e ajuste os campos. */
 const IMG = (id, w) => 'https://images.unsplash.com/' + id + '?q=80&w=' + (w || 1400) + '&auto=format&fit=crop';
-const PROJECTS = [];
+const PROJECTS = [
+  {
+    code: 'PROJECT_001', title: 'Artesano Hamburgueria', cat: 'Social media', catKey: 'social', year: '2025',
+    desc: 'Linha editorial de social media para hamburgueria artesanal: peças de feed, stories e capas de reels com fotografia de produto em destaque.',
+    cover: 'assets/img/artesano-hamburgueria.jpg', palette: 'Laranja queimado · Creme · Grafite',
+    context: 'Hamburgueria artesanal que precisava comunicar o processo manual (blend moído de manhã, chapa calibrada) e transformar o burger em protagonista do feed.',
+    challenge: 'Aumentar apetite e pedidos sem parecer genérico: o produto tinha que dominar a peça, com texto curto e leitura imediata no scroll.',
+    concept: 'Fotografia de produto em primeiro plano sobre fundos laranja/creme/grafite, tipografia oversized ("existe fome… e existe fome de Artesano") e selos de ação ("prove a diferença, peça o seu").',
+    results: 'Linha editorial consistente para feed e stories, com peças reaproveitáveis por lote (ex.: Lote nº 07) e CTA direto para pedido.',
+    gallery: ['assets/img/artesano-hamburgueria.jpg', IMG('photo-1568901346375-23c9450c58cd'), IMG('photo-1571091718767-18b5b1457add')]
+  }
+];
 
 /* ---------- helpers ---------- */
 const $ = (s, c) => (c || document).querySelector(s);
