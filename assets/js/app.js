@@ -26,7 +26,7 @@ const PROJECTS = [
     challenge: 'Aumentar apetite e pedidos sem parecer genérico: o produto tinha que dominar a peça, com texto curto e leitura imediata no scroll.',
     concept: 'Fotografia de produto em primeiro plano sobre fundos laranja/creme/grafite, tipografia oversized ("existe fome… e existe fome de Artesano") e selos de ação ("prove a diferença, peça o seu").',
     results: 'Linha editorial consistente para feed e stories, com peças reaproveitáveis por lote (ex.: Lote nº 07) e CTA direto para pedido.',
-    gallery: ['assets/img/artesano-hamburgueria.jpg', IMG('photo-1568901346375-23c9450c58cd'), IMG('photo-1571091718767-18b5b1457add')]
+    gallery: ['assets/img/artesano-hamburgueria.jpg', 'assets/img/arte-01.jpg', 'assets/img/arte-02.jpg', 'assets/img/arte-03.jpg', 'assets/img/arte-04.jpg', 'assets/img/arte-05.jpg', 'assets/img/arte-06.jpg', 'assets/img/arte-07.jpg', 'assets/img/arte-08.jpg', 'assets/img/arte-09.jpg', 'assets/img/arte-10.jpg', 'assets/img/arte-11.jpg', 'assets/img/arte-12.jpg']
   }
 ];
 
