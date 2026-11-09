@@ -78,6 +78,13 @@ const secObs = new IntersectionObserver(entries => {
 
 /* ---------- works: renderização ---------- */
 const grid = $('#works-grid');
+
+/* reveal on scroll (definido antes do render para evitar erro de ordem) */
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('inview'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+function observeReveals(scope) { $$('.reveal', scope).forEach(el => revealObs.observe(el)); }
+
 function renderWorks() {
   grid.innerHTML = PROJECTS.map((p, i) => `
     <article class="work-card reveal" data-cat="${p.catKey}" data-index="${i}" tabindex="0" role="button"
@@ -85,7 +92,7 @@ function renderWorks() {
       <div class="work-media">
         <img src="${p.cover}" alt="Capa do projeto ${p.title}" loading="lazy" decoding="async">
         <span class="work-id">${p.code}</span>
-        <span class="work-view">VER PROJETO →</span>
+        <button class="work-view" type="button">VER PROJETO →</button>
         <span class="sel-handle tl" aria-hidden="true"></span><span class="sel-handle tr" aria-hidden="true"></span>
         <span class="sel-handle bl" aria-hidden="true"></span><span class="sel-handle br" aria-hidden="true"></span>
       </div>
@@ -99,6 +106,8 @@ function renderWorks() {
   $$('.work-card', grid).forEach(card => {
     card.addEventListener('click', () => openProject(+card.dataset.index));
     card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openProject(+card.dataset.index); } });
+    const viewBtn = $('.work-view', card);
+    if (viewBtn) viewBtn.addEventListener('click', e => { e.stopPropagation(); openProject(+card.dataset.index); });
   });
 }
 renderWorks();
@@ -120,11 +129,6 @@ $$('.filter-btn').forEach(btn => btn.addEventListener('click', () => {
   emptyMsg.hidden = visible !== 0;
 }));
 
-/* ---------- reveal on scroll ---------- */
-const revealObs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('inview'); revealObs.unobserve(e.target); } });
-}, { threshold: 0.12 });
-function observeReveals(scope) { $$('.reveal', scope).forEach(el => revealObs.observe(el)); }
 observeReveals(document);
 
 /* ---------- contadores (about) ---------- */

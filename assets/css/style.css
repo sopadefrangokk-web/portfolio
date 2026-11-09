@@ -125,8 +125,9 @@ button{font-family:inherit;cursor:pointer}
 .work-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,11,11,.55),transparent 55%);opacity:0;transition:opacity .4s}
 .work-card:hover .work-media::after{opacity:1}
 .work-id{position:absolute;top:14px;left:14px;z-index:3;font-family:var(--font-tech);font-size:10px;font-weight:700;letter-spacing:.18em;background:rgba(11,11,11,.75);border:1px solid var(--accent);color:var(--accent);padding:.35rem .6rem;backdrop-filter:blur(4px)}
-.work-view{position:absolute;right:14px;bottom:14px;z-index:3;font-family:var(--font-tech);font-size:11px;font-weight:700;letter-spacing:.12em;background:var(--accent);color:var(--bg);padding:.55rem .9rem;border-radius:999px;opacity:0;transform:translateY(6px);transition:all .3s var(--ease)}
-.work-card:hover .work-view,.work-card:focus-visible .work-view{opacity:1;transform:none}
+.work-view{position:absolute;right:14px;bottom:14px;z-index:3;font-family:var(--font-tech);font-size:11px;font-weight:700;letter-spacing:.12em;background:var(--accent);color:var(--bg);border:none;padding:.55rem .9rem;border-radius:999px;opacity:0;transform:translateY(6px);transition:all .3s var(--ease);cursor:pointer}
+.work-card:hover .work-view,.work-card:focus-within .work-view{opacity:1;transform:none}
+@media(pointer:coarse){.work-view{opacity:1;transform:none}}
 .sel-handle{position:absolute;width:10px;height:10px;background:transparent;border:1.5px solid var(--accent);z-index:3;opacity:0;transition:opacity .25s;pointer-events:none}
 .work-card:hover .sel-handle{opacity:1}
 .sel-handle.tl{top:-5px;left:-5px}.sel-handle.tr{top:-5px;right:-5px}
