@@ -80,7 +80,19 @@ button{font-family:inherit;cursor:pointer}
 .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:90px 90px;mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000 30%,transparent 75%);pointer-events:none}
 .hero-glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(230,14,30,.09),transparent 65%);transform:translate(-50%,-50%);pointer-events:none;left:50%;top:40%}
 .hero-title{font-family:var(--font-title);text-transform:uppercase;font-size:clamp(2.6rem,7.2vw,6.4rem);line-height:.98;letter-spacing:-.01em;margin:1.2rem 0 1.8rem;max-width:16ch}
-.hero-title .word{display:inline-block;margin-right:.22em;position:relative;outline-offset:6px}
+.hero-title .word{display:inline-block;margin-right:.22em;position:relative;outline-offset:6px;animation:wordRise .8s var(--ease) both}
+.hero-title .word:nth-child(1){animation-delay:.05s}.hero-title .word:nth-child(2){animation-delay:.12s}
+.hero-title .word:nth-child(3){animation-delay:.19s}.hero-title .word:nth-child(4){animation-delay:.26s}
+.hero-title .word:nth-child(5){animation-delay:.33s}.hero-title .word:nth-child(6){animation-delay:.40s}
+.hero-title .word:nth-child(7){animation-delay:.47s}
+@keyframes wordRise{from{opacity:0;transform:translateY(.5em) rotate(2deg)}to{opacity:1;transform:none}}
+/* letreiro/marquee */
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.9rem 0;background:rgba(230,14,30,.06)}
+.marquee-track{display:flex;white-space:nowrap;width:max-content;animation:marqueeMove 22s linear infinite;font-family:var(--font-tech);font-size:12px;font-weight:700;letter-spacing:.28em;color:var(--silver)}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes marqueeMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.hero-scroll{animation:scrollHint 2s ease-in-out infinite}
+@keyframes scrollHint{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
 .hero-title .word.outline{color:transparent;-webkit-text-stroke:1.5px var(--paper)}
 .hero-title .word.accent{color:var(--accent)}
 .hero-title .word i{font-style:normal;color:var(--accent)}
@@ -109,7 +121,7 @@ button{font-family:inherit;cursor:pointer}
 .filter-btn:hover{border-color:var(--accent);color:var(--paper)}
 .filter-btn.active{background:var(--accent);border-color:var(--accent);color:var(--bg)}
 .works-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:3.2rem 2.4rem}
-.work-card{grid-column:1/-1;cursor:pointer;position:relative}
+.work-card{grid-column:1/-1;cursor:pointer;position:relative;transition:transform .35s var(--ease),box-shadow .35s var(--ease);transform-style:preserve-3d;will-change:transform}
 .work-card[hidden]{display:none}
 @media(min-width:768px){
   .work-card:nth-child(1){grid-column:1/9}
@@ -338,5 +350,6 @@ body.inspect-on [data-inspect]::before{content:attr(data-inspect);position:absol
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
   .reveal{opacity:1;transform:none}
+  .hero-title .word,.hero-scroll,.marquee-track{animation:none !important;opacity:1 !important;transform:none !important}
   .hero-glow,#cursor-dot,#cursor-tag{display:none}
 }

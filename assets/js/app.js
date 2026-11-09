@@ -178,6 +178,31 @@ if (hero && glow && !reduced && matchMedia('(pointer:fine)').matches) {
   });
 }
 
+/* ---------- tilt 3D + botões magnéticos (desktop) ---------- */
+if (!reduced && matchMedia('(pointer:fine)').matches) {
+  document.addEventListener('pointerover', e => {
+    const card = e.target.closest('.work-card');
+    if (!card || card.dataset.tilt) return;
+    card.dataset.tilt = '1';
+    card.addEventListener('pointermove', ev => {
+      const r = card.getBoundingClientRect();
+      const x = (ev.clientX - r.left) / r.width - .5;
+      const y = (ev.clientY - r.top) / r.height - .5;
+      card.style.transform = 'perspective(900px) rotateX(' + (-y * 5).toFixed(2) + 'deg) rotateY(' + (x * 5).toFixed(2) + 'deg) translateY(-4px)';
+    });
+    card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+  });
+  $$('.btn').forEach(btn => {
+    btn.addEventListener('pointermove', e => {
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      btn.style.transform = 'translate(' + (x * .18).toFixed(1) + 'px,' + (y * .22).toFixed(1) + 'px)';
+    });
+    btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
+  });
+}
+
 /* ---------- cursor contextual + inspect ---------- */
 const dot = $('#cursor-dot'), tag = $('#cursor-tag');
 const inspectBtn = $('#inspect-toggle'), inspectLayer = $('#inspect-layer');
