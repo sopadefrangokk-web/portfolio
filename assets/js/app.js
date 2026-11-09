@@ -9,9 +9,9 @@ const CONFIG = {
   nome: 'Creative Portfolio',
   whatsapp: '5588993047104', // DDD + número (só dígitos, com código do país)
   whatsappMsg: 'Olá! Vi seu portfólio e quero conversar sobre um projeto.',
-  email: 'ola@creativeportfolio.com.br',
-  instagram: 'https://instagram.com/creativeportfolio',
-  behance: 'https://behance.net/creativeportfolio'
+  email: 'matheushrqferreira@gmail.com',
+  instagram: 'https://instagram.com/matheushrdsgn',
+  behance: 'https://www.behance.net/matheusferreira391'
 };
 
 /* ---------- DADOS: projetos (edite livremente) ---------- */
