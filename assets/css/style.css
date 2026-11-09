@@ -141,9 +141,9 @@ button{font-family:inherit;cursor:pointer}
 /* ---------- about ---------- */
 .about{padding:7rem 0;border-top:1px solid var(--line)}
 .about-grid{display:grid;gap:3rem}
-@media(min-width:900px){.about-grid{grid-template-columns:380px 1fr;align-items:start}}
-.about-photo{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
-.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.08)}
+@media(min-width:900px){.about-grid{grid-template-columns:430px 1fr;align-items:start}}
+.about-photo{position:relative;border:2px solid var(--accent);border-radius:var(--radius);overflow:hidden;background:var(--surface);box-shadow:0 24px 60px rgba(230,14,30,.18),0 0 0 6px rgba(230,14,30,.08)}
+.about-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;filter:saturate(1.05) contrast(1.05)}
 .about-photo:hover .sel-handle{opacity:1}
 .photo-tag{position:absolute;bottom:12px;left:12px;font-family:var(--font-tech);font-size:9px;letter-spacing:.2em;color:var(--accent);background:rgba(11,11,11,.8);padding:.3rem .55rem}
 .about-lead{font-family:var(--font-title);font-size:clamp(1.2rem,2.4vw,1.7rem);line-height:1.25;text-transform:uppercase;margin-bottom:1.2rem}
