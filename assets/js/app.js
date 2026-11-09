@@ -7,7 +7,7 @@
 /* ---------- CONFIG: edite seus contatos aqui ---------- */
 const CONFIG = {
   nome: 'Creative Portfolio',
-  whatsapp: '5511999999999', // DDD + número (só dígitos, com código do país)
+  whatsapp: '5588993047104', // DDD + número (só dígitos, com código do país)
   whatsappMsg: 'Olá! Vi seu portfólio e quero conversar sobre um projeto.',
   email: 'ola@creativeportfolio.com.br',
   instagram: 'https://instagram.com/creativeportfolio',
