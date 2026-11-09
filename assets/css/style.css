@@ -54,6 +54,7 @@ button{font-family:inherit;cursor:pointer}
 #site-header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
 #site-header.scrolled{background:rgba(11,11,11,.82);backdrop-filter:blur(14px);border-bottom-color:var(--line)}
 .header-inner{width:min(1320px,92vw);margin-inline:auto;height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.header-spacer{flex:1}
 .logo{display:flex;align-items:center;gap:.7rem;font-family:var(--font-title);font-size:.82rem;letter-spacing:.06em;line-height:1;text-transform:uppercase}
 .logo em{font-style:normal;color:var(--accent);display:block}
 .logo-mark{width:18px;height:18px;background:var(--accent);position:relative;flex:none}
